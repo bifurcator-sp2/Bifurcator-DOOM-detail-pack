@@ -78,6 +78,17 @@ vec3 blend_rnm(vec3 n1, vec3 n2)
     return r;
 }
 
+vec3 blend_rnm_pd(vec3 n1, vec3 n2)
+{
+	vec3 t = vec3(n1.xy * 2 - 1, 1);
+	vec3 u = vec3(-2 * n2.xy + 1, 1);
+	float q = dot(t, t);
+	float s = sqrt(q);
+	t.z += s;
+	vec3 r = t * dot(t, u) - u * (q + s);
+	return normalize(r);
+}
+
 vec3 ApplyNormalMapWithRNM(vec2 texcoord, vec2 txDetail)
 {
 	vec3 interpolatedNormal = normalize(vWorldNormal.xyz);
@@ -85,10 +96,10 @@ vec3 ApplyNormalMapWithRNM(vec2 texcoord, vec2 txDetail)
     vec3 normalColor = texture(normaltexture, texcoord).xyz;
     vec3 detailColor = texture(normaltexture, txDetail).xyz;
 
-	vec3 map = blend_rnm(normalColor, detailColor);
-	map = map * 255.0f/127.0f - 128.0f/127.0f; // Math so "odd" because 0.5 cannot be precisely described in an unsigned format
-
+	vec3 map = blend_rnm_pd(normalColor, detailColor);
+	map.xy = map.xy * 255.0f/127.0f - 128.0f/127.0f; // Math so "odd" because 0.5 cannot be precisely described in an unsigned format
 	map.y = -map.y;
+    map.z = sqrt(clamp(dot(map.xy, map.xy), 0.0, 1.0));
 
 	mat3 tbn = cotangentFrame(interpolatedNormal, pixelpos.xyz, vTexCoord.st);
 	vec3 bumpedNormal = normalize(tbn * map);
