@@ -1,0 +1,149 @@
+
+
+material texture FWATER1 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl11.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture FWATER2 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl11.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture FWATER3 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl11.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture FWATER4 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl11.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture BLOOD1 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl12.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture BLOOD2 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl12.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture BLOOD3 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl12.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+
+material texture NUKAGE1 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl13.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture NUKAGE2 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl13.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture NUKAGE3 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl13.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+
+material texture SLIME01 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl14.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture SLIME02 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl14.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture SLIME03 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl14.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture SLIME04 {
+	Shader "Shaders/WaterShaderNew.glsl"
+	normal "MATERIALS/normalmaps/POOL3D.png"
+	Texture matCapTex "MATERIALS/reflections/refl14.png"
+   	Texture matCapMaskTex "MATERIALS/masks/nomask.png"
+	specularlevel 0.50
+	glossiness 30
+}
+material texture SLIME05{
+	Shader "Shaders/WaterShader.fp"
+	texture offsetTexture "materials/waterUV.png"
+	Speed 0.3
+	specularlevel 0.50
+	glossiness 30
+}
+material texture SLIME06{
+	Shader "Shaders/WaterShader.fp"
+	texture offsetTexture "materials/waterUV.png"
+	Speed 0.3
+	specularlevel 0.50
+	glossiness 30
+}
+material texture SLIME07{
+	Shader "Shaders/WaterShader.fp"
+	texture offsetTexture "materials/waterUV.png"
+	Speed 0.3
+	specularlevel 0.50
+	glossiness 30
+}
+material texture SLIME08{
+	Shader "Shaders/WaterShader.fp"
+	texture offsetTexture "materials/waterUV.png"
+	Speed 0.3
+	specularlevel 0.50
+	glossiness 30
+}
+HardwareShader Texture LAVA1
+{
+	Shader "shaders/water.fp"
+	Speed 1.0
+}
