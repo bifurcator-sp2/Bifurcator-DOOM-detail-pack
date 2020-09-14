@@ -116,7 +116,7 @@ Material ProcessMaterial()
     vec2 texCoord = vTexCoord.st;
     
     float blendAmount = 1.25f; // more value less distance
-    vec2 tiling = vec2(2.0f, 2.0f);
+    vec2 tiling = vec2(4.0f, 4.0f);
         
     vec2 textureRatio = getTexureRatio(tex, tex_overlay);
     vec2 tiledDetailTx = textureRatio * texCoord * tiling;
